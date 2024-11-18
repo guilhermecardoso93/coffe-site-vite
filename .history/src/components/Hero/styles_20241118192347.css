@@ -1,0 +1,17 @@
+.hero-section {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.hero-section .section-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--white-color);
+  justify-content: space-between;
+}
+
+.hero-section .hero-details .title {
+  font-size: var(--font-size-xxl);
+  color: var(--secondary-color)
+}

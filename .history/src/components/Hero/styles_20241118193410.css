@@ -1,0 +1,29 @@
+.hero-section {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.hero-section .section-content-hero {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--white-color);
+  justify-content: space-between;
+  padding-top: 5rem;
+  margin: 0 auto;
+  max-width: var(--site-max-width);
+}
+
+.hero-section .hero-details .title {
+  font-size: var(--font-size-xxl);
+  color: var(--secondary-color);
+  font-weight: var(--font-weight-bold);
+  font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+  font-size: var(--font-size-xl);
+  margin-top: 8px;
+  max-width: 70%;
+  font-weight: var(--font-weight-semibold);
+}

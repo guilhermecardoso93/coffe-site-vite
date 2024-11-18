@@ -1,0 +1,7 @@
+header {
+  background-color: var(--primary-color);
+}
+
+.navbar .nav-menu .nav-link {
+  color: var(--white-color);
+}

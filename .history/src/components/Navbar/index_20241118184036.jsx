@@ -1,0 +1,16 @@
+export function Navbar() {
+  return (
+    <header>
+      <nav className="navbar">
+        <a href="/" className="nav-logo">
+          <h2 className="logo-text">☕Coffee</h2>
+        </a>
+        <ul className="nav-menu">
+          <li className="nav-item">
+            <a href="/" className="nav-link"></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+}

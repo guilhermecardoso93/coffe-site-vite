@@ -1,0 +1,22 @@
+header {
+  background-color: var(--primary-color);
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+  color: var(--white-color);
+}
+
+.navbar .nav-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+  color: var(--white-color);
+}
