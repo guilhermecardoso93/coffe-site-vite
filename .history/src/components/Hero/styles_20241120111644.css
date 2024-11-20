@@ -51,6 +51,7 @@
   background-color: var(--secondary-color);
   font-weight: var(--font-weight-medium);
   transition: 0.3s ease;
+
 }
 
 .hero-section .hero-details .button:hover,
@@ -76,26 +77,7 @@
     flex-direction: column-reverse;
     justify-content: center;
     gap: 50px;
+    text-align: center;
     padding: 30px 20px 20px;
-  }
-
-  .hero-section .hero-image-wrapper {
-    max-width: 270px;
-    margin-right: 0;
-  }
-
-  .hero-section .hero-details :is(.subtitle, .description) {
-    max-width: 100%;
-  }
-
-  .hero-section .hero-details .buttons {
-    justify-content: center;
-  }
-
-  .hero-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }

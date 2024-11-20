@@ -51,6 +51,7 @@
   background-color: var(--secondary-color);
   font-weight: var(--font-weight-medium);
   transition: 0.3s ease;
+
 }
 
 .hero-section .hero-details .button:hover,
@@ -86,6 +87,7 @@
 
   .hero-section .hero-details :is(.subtitle, .description) {
     max-width: 100%;
+
   }
 
   .hero-section .hero-details .buttons {

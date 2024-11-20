@@ -63,7 +63,7 @@ img {
 
 .section-title {
   text-align: center;
-  padding: 20px 0;
+  padding: 60px 0 100px;
   text-transform: uppercase;
   font-size: var(--font-size-xl);
 }
@@ -74,7 +74,6 @@ img {
   height: 5px;
   display: block;
   margin: 10px auto 0;
-  border-radius: var(--border-radius-s);
   background-color: var(--secondary-color);
 }
 

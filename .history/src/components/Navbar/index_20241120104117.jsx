@@ -6,10 +6,13 @@ export function Navbar() {
   // Estado para controlar a visibilidade do menu
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Alternar o estado do menu
+  // Funções para abrir/fechar o menu
   const toggleMobileMenu = () => {
-    setMobileMenuOpen((prevState) => !prevState);
-    document.body.classList.toggle("show-mobile-menu", !isMobileMenuOpen); // Para adicionar/remover a classe no body
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -18,9 +21,11 @@ export function Navbar() {
         <a href="/" className="nav-logo">
           <h2 className="logo-text">☕Coffee</h2>
         </a>
-        {/* Menu com classe condicional */}
-        <ul className={`nav-menu ${isMobileMenuOpen ? "show-mobile-menu" : ""}`}>
-          <button id="menu-close-button" onClick={toggleMobileMenu}>
+        {/* Classe condicional para o menu */}
+        <ul
+          className={`nav-menu ${isMobileMenuOpen ? "show-mobile-menu" : ""}`}
+        >
+          <button id="menu-close-button">
             <X color="black" size={40} />
           </button>
           <li className="nav-item">
@@ -29,27 +34,26 @@ export function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a href="/about" className="nav-link">
+            <a href="/" className="nav-link">
               About
             </a>
           </li>
           <li className="nav-item">
-            <a href="/menu" className="nav-link">
+            <a href="/" className="nav-link">
               Menu
             </a>
           </li>
           <li className="nav-item">
-            <a href="/gallery" className="nav-link">
+            <a href="/" className="nav-link">
               Gallery
             </a>
           </li>
           <li className="nav-item">
-            <a href="/contact" className="nav-link">
+            <a href="/" className="nav-link">
               Contact
             </a>
           </li>
         </ul>
-        {/* Botão para abrir o menu */}
         <button id="menu-open-button" onClick={toggleMobileMenu}>
           <AlignJustify color="white" size={40} />
         </button>

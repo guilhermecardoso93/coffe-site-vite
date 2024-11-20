@@ -41,9 +41,6 @@
 }
 
 .hero-section .hero-details .button {
-  display: flex;
-  align-items: center;
-  text-align: center;
   padding: 10px 26px;
   color: var(--primary-color);
   border: 2px solid transparent;
@@ -51,6 +48,7 @@
   background-color: var(--secondary-color);
   font-weight: var(--font-weight-medium);
   transition: 0.3s ease;
+
 }
 
 .hero-section .hero-details .button:hover,
@@ -72,30 +70,13 @@
 }
 
 @media screen and (max-width: 900px) {
-  .hero-section .section-content-hero {
-    flex-direction: column-reverse;
-    justify-content: center;
-    gap: 50px;
-    padding: 30px 20px 20px;
-  }
-
-  .hero-section .hero-image-wrapper {
-    max-width: 270px;
-    margin-right: 0;
-  }
-
-  .hero-section .hero-details :is(.subtitle, .description) {
-    max-width: 100%;
-  }
-
-  .hero-section .hero-details .buttons {
-    justify-content: center;
-  }
-
-  .hero-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .navbar .nav-menu {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: var(--white-color);
   }
 }

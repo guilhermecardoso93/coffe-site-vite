@@ -96,11 +96,6 @@ body.show-mobile-menu .nav-menu {
     transform: translateX(-100%);
   }
 
-  .navbar .nav-menu .nav-item a {
-    color: var(--dark-color);
-  }
-
-
   .nav-menu .nav-item {
     margin-bottom: 2rem;
     background: none;

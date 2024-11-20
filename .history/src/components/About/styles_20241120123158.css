@@ -1,0 +1,18 @@
+.about-section {
+  padding: 120px 0;
+  background-color: var(--light-pink-color);
+}
+
+.about-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-section .about-image-wrapper .about-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius-cicle);
+}

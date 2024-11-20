@@ -1,0 +1,9 @@
+.about-section {
+  padding: 120px 0;
+  background-color: var(--light-pink-color);
+
+}
+
+.about-section .section-content {
+  display: flex;
+}

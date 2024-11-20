@@ -3,14 +3,11 @@ import { AlignJustify, X } from "lucide-react";
 import "./styles.css";
 
 export function Navbar() {
-  // Estado para controlar a visibilidade do menu
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Alternar o estado do menu
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen((prevState) => !prevState);
-    document.body.classList.toggle("show-mobile-menu", !isMobileMenuOpen); // Para adicionar/remover a classe no body
-  };
+  const toggleMobileMenu = () => setMobileMenuOpen(!isMobileMenuOpen);
+
+  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
     <header>
@@ -19,8 +16,15 @@ export function Navbar() {
           <h2 className="logo-text">☕Coffee</h2>
         </a>
         {/* Menu com classe condicional */}
-        <ul className={`nav-menu ${isMobileMenuOpen ? "show-mobile-menu" : ""}`}>
-          <button id="menu-close-button" onClick={toggleMobileMenu}>
+        <ul
+          className={`nav-menu ${isMobileMenuOpen ? "show-mobile-menu" : ""}`}
+          aria-hidden={!isMobileMenuOpen}
+        >
+          <button
+            id="menu-close-button"
+            onClick={closeMobileMenu}
+            aria-label="Close menu"
+          >
             <X color="black" size={40} />
           </button>
           <li className="nav-item">
@@ -49,8 +53,12 @@ export function Navbar() {
             </a>
           </li>
         </ul>
-        {/* Botão para abrir o menu */}
-        <button id="menu-open-button" onClick={toggleMobileMenu}>
+        <button
+          id="menu-open-button"
+          onClick={toggleMobileMenu}
+          aria-expanded={isMobileMenuOpen}
+          aria-label="Open menu"
+        >
           <AlignJustify color="white" size={40} />
         </button>
       </nav>
