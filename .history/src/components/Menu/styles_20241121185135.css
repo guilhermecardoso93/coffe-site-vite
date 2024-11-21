@@ -1,0 +1,10 @@
+.menu-section .menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu-section .menu-list  .menu-item .menu-image {
+  max-width: 83%;
+  aspect-ratio: 1;
+}
