@@ -1,0 +1,11 @@
+.contact-section {
+  background: var(--light-pink-color);
+  padding: 50px 0 100px;
+}
+
+.contact-section .section-content {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: space-between;
+}

@@ -1,0 +1,18 @@
+.gallery-section {
+  padding: 50px 0 100px;
+}
+
+.gallery-section .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.gallery-section .gallery-list .gallery-item {
+  width: calc(100% /3 -32px);
+}
+
+.gallery-section .gallery-list .gallery-item .gallery-image {
+  width: 100%;
+}

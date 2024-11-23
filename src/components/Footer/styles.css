@@ -1,0 +1,49 @@
+ .footer-section {
+   background-color: var(--dark-color);
+   padding: 20px 0;
+ }
+
+ .footer-section :where(.copyright-text, .social-link, .policy-text) {
+   color: var(--white-color);
+ }
+
+ .footer-section .section-content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .social-link-list {
+   display: flex;
+   gap: 25px;
+   justify-content: center;
+ }
+
+ .social-link-list .social-link {
+   color: var(--white-color);
+   font-size: var(--font-size-l);
+   transition: 0.2s ease;
+ }
+
+ .social-link-list .social-link:hover, .policy-text .policy-link:hover {
+   color: var(--secondary-color);
+ }
+
+ .policy-text .policy-link {
+   text-decoration: none;
+   color: white;
+ }
+
+ .policy-text {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+ }
+
+ @media screen and (max-width: 900px) {
+   .footer-section .section-content {
+     flex-direction: column;
+     gap: 10px;
+   }
+ }
